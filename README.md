@@ -20,6 +20,13 @@ High-volume screening results in decision fatigue, prolonged hiring timelines, a
 ### The Solution
 An agentic AI solution that automates the "Screening & Scheduling" phase of recruitment.
 
+### Retrieval-Augmented Generation (RAG)
+Recruit-AI uses a RAG pipeline to make AI decisions more accurate and context-aware.
+- **Chunking**: resumes and job descriptions are split into smaller semantic text chunks for better retrieval.
+- **Semantic Search**: chunks are embedded and searched by meaning, not just keywords, to find the most relevant candidate details.
+- **Vector Store**: Supabase is used as the vector database to store embeddings and run similarity search across candidate data.
+- **Grounded AI**: retrieved chunks are combined with AI scoring and ranking, reducing hallucinations and improving match quality.
+
 ### 💥 Why Agentic AI?
 
 Hiring today is still stuck in the past:
